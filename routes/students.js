@@ -54,8 +54,34 @@ router.post(
 // @route   PUT api/students/:id
 // @desc    Update student
 // @access  Private
-router.put('/:id', (req, res) => {
-  res.send('Update student');
+router.put('/:id', auth, async (req, res) => {
+  const { name } = req.body;
+
+  // Build student object
+  const studentFields = {};
+  if (name) studentFields.name = name;
+
+  try {
+    let student = await Student.findById(req.params.id);
+
+    if (!student) return res.status(404).json({ msg: 'Student not found' });
+
+    // Make sure user owns student
+    if (student.user.toString() !== req.user.id) {
+      return res.status(401).json({ msg: 'Not authorized' });
+    }
+
+    student = await Student.findByIdAndUpdate(
+      req.params.id,
+      { $set: studentFields },
+      { new: true }
+    );
+
+    res.json(student);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
 });
 
 // @route   DELETE api/students/:id
