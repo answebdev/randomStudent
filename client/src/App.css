@@ -3,7 +3,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #003699;
+  --primary-color: #8e4cc6;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -364,9 +364,9 @@ table th {
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  background-color: #8e4cc6;
-  /* border-bottom: solid 1px var(--primary-color); */
-  opacity: 0.9;
+  /* background-color: #8e4cc6; */
+  border-bottom: solid 1px var(--primary-color);
+  /* opacity: 0.9; */
   margin-bottom: 1rem;
 }
 
