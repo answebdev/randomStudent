@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* Global Styles */
 :root {
@@ -17,8 +16,7 @@
 }
 
 body {
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Raleway', sans-serif;
   letter-spacing: 0.5px;
   font-size: 1rem;
   line-height: 1.6;
@@ -43,8 +41,12 @@ img {
   width: 100%;
 }
 
+.about-bar {
+  letter-spacing: 0.5px;
+}
+
 .error-btn {
-  letter-spacing: '0.5';
+  letter-spacing: 0.5px;
   border-radius: 5px;
 }
 
@@ -378,6 +380,12 @@ table th {
   border-bottom: solid 1px var(--primary-color);
   /* opacity: 0.9; */
   margin-bottom: 1rem;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .navbar ul {

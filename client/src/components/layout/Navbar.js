@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const Navbar = ({ title, icon }) => {
   return (
     <div className='navbar bg-primary'>
-      <h1>
+      <p className='nav-title'>
         <i className={icon} /> {title}
-      </h1>
+      </p>
     </div>
   );
 };

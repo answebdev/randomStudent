@@ -9,7 +9,7 @@ const About = () => {
         from a class roster.
       </p>
       <p className='bg-dark p'>
-        <strong>Version 1.0.0</strong>
+        <strong className='about-bar'>Version 1.0.0</strong>
       </p>
     </div>
   );
