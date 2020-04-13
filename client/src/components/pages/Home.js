@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Students from '../students/Students';
+import StudentForm from '../students/StudentForm';
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
         <title>Random Student Generator</title>
       </Helmet>
       <div>
-        {/* {Student Form} */}
+        <StudentForm />
       </div>
       <div>
         <Students />
