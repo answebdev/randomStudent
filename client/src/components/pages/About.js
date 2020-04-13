@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>Random Student Generator | About</title>
+      </Helmet>
       <h1>About This App</h1>
       <p className='my-1'>
         This is a full-stack React app used to randomly generate student names
