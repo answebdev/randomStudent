@@ -1,13 +1,19 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Students from '../students/Students';
 
 const Home = () => {
   return (
-    <div>
+    <div className='grid-2'>
       <Helmet>
         <title>Random Student Generator</title>
       </Helmet>
-      <h1>Home</h1>
+      <div>
+        {/* {Student Form} */}
+      </div>
+      <div>
+        <Students />
+      </div>
     </div>
   );
 };
