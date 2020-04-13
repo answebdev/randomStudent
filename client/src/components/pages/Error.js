@@ -11,19 +11,7 @@ const Error = () => {
       </h1>
       <br />
       <p className='text-center'>
-        <a
-          class='btn btn-primary error-btn'
-          href='/'
-          style={
-            {
-              // fontFamily: 'Roboto',
-              // fontWeight: '400',
-              // letterSpacing: '0.5',
-              // backgroundColor: '#3D6CAD',
-              // border: '#ffffff',
-            }
-          }
-        >
+        <a class='btn btn-primary error-btn' href='/'>
           <i className='fa fa-home'></i> Take Me Home
         </a>
       </p>
