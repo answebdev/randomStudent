@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import StudentContext from '../../context/student/studentContext';
 
 const StudentForm = () => {
+  const studentContext = useContext(StudentContext);
+
   const [student, setStudent] = useState({
     name: '',
   });
@@ -10,8 +13,16 @@ const StudentForm = () => {
   const onChange = (e) =>
     setStudent({ ...student, [e.target.name]: e.target.value });
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    studentContext.addStudent(student);
+    setStudent({
+      name: '',
+    });
+  };
+
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <h2 className='text-primary'>Add Student</h2>
       <input
         type='text'

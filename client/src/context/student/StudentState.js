@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react';
-import uuid from 'uuid';
+// import uuid from 'uuid';
+import * as uuid from 'uuid';
 import StudentContext from './studentContext';
 import studentReducer from './studentReducer';
 import {
@@ -33,6 +34,10 @@ const StudentState = (props) => {
   const [state, dispatch] = useReducer(studentReducer, initialState);
 
   // Add Student
+  const addStudent = (student) => {
+    student.id = uuid.v4();
+    dispatch({ type: ADD_STUDENT, payload: student });
+  };
 
   // Delete Student
 
@@ -50,6 +55,7 @@ const StudentState = (props) => {
     <StudentContext.Provider
       value={{
         students: state.students,
+        addStudent,
       }}
     >
       {props.children}
