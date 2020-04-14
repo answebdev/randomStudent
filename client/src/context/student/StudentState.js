@@ -56,6 +56,9 @@ const StudentState = (props) => {
   };
 
   // Update Student
+  const updateStudent = (student) => {
+    dispatch({ type: UPDATE_STUDENT, payload: student });
+  };
 
   // Filter Students
 
@@ -70,6 +73,7 @@ const StudentState = (props) => {
         deleteStudent,
         setCurrent,
         clearCurrent,
+        updateStudent,
       }}
     >
       {props.children}
