@@ -25,7 +25,7 @@ const StudentState = (props) => {
         name: 'Ali',
       },
       {
-        id: 1,
+        id: 3,
         name: 'Leo',
       },
     ],
@@ -40,6 +40,9 @@ const StudentState = (props) => {
   };
 
   // Delete Student
+  const deleteStudent = (id) => {
+    dispatch({ type: DELETE_STUDENT, payload: id });
+  };
 
   // Set Current Student
 
@@ -56,6 +59,7 @@ const StudentState = (props) => {
       value={{
         students: state.students,
         addStudent,
+        deleteStudent,
       }}
     >
       {props.children}
