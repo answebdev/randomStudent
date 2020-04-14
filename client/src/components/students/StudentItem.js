@@ -4,12 +4,13 @@ import StudentContext from '../../context/student/studentContext';
 
 const StudentItem = ({ student }) => {
   const studentContext = useContext(StudentContext);
-  const { deleteStudent } = studentContext;
+  const { deleteStudent, setCurrent, clearCurrent } = studentContext;
 
   const { id, name } = student;
 
   const onDelete = () => {
     deleteStudent(id);
+    clearCurrent();
   };
 
   return (
@@ -17,7 +18,12 @@ const StudentItem = ({ student }) => {
       <h3 className='text-primary text-left'>{name}</h3>
       <br />
       <p>
-        <button className='btn btn-dark btn-sm'>Edit</button>
+        <button
+          className='btn btn-dark btn-sm'
+          onClick={() => setCurrent(student)}
+        >
+          Edit
+        </button>
         <button className='btn btn-danger btn-sm' onClick={onDelete}>
           Delete
         </button>

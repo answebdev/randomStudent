@@ -22,6 +22,16 @@ export default (state, action) => {
           (student) => student.id !== action.payload
         ),
       };
+    case SET_CURRENT:
+      return {
+        ...state,
+        current: action.payload,
+      };
+    case CLEAR_CURRENT:
+      return {
+        ...state,
+        current: null,
+      };
     default:
       return state;
   }

@@ -29,6 +29,7 @@ const StudentState = (props) => {
         name: 'Leo',
       },
     ],
+    current: null,
   };
 
   const [state, dispatch] = useReducer(studentReducer, initialState);
@@ -45,8 +46,14 @@ const StudentState = (props) => {
   };
 
   // Set Current Student
+  const setCurrent = (student) => {
+    dispatch({ type: SET_CURRENT, payload: student });
+  };
 
   // Clear Current Student
+  const clearCurrent = () => {
+    dispatch({ type: CLEAR_CURRENT });
+  };
 
   // Update Student
 
@@ -58,8 +65,11 @@ const StudentState = (props) => {
     <StudentContext.Provider
       value={{
         students: state.students,
+        current: state.current,
         addStudent,
         deleteStudent,
+        setCurrent,
+        clearCurrent,
       }}
     >
       {props.children}
