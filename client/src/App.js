@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Error from './components/pages/Error';
+import Generator from './components/pages/Generator';
 import StudentState from './context/student/StudentState';
 import './App.css';
 
@@ -16,6 +17,7 @@ const App = () => {
           <div className='container'>
             <Switch>
               <Route exact path='/' component={Home} />
+              <Route exact path='/generator' component={Generator} />
               <Route exact path='/about' component={About} />
               <Route component={Error} />
             </Switch>

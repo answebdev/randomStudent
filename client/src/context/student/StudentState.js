@@ -9,8 +9,9 @@ import {
   SET_CURRENT,
   CLEAR_CURRENT,
   UPDATE_STUDENT,
-  FILTER_STUDENTS,
-  CLEAR_FILTER,
+  SHUFFLE_STUDENTS,
+  // FILTER_STUDENTS,
+  // CLEAR_FILTER,
 } from '../types';
 
 const StudentState = (props) => {
@@ -22,11 +23,19 @@ const StudentState = (props) => {
       },
       {
         id: 2,
-        name: 'Ali',
+        name: 'Adolf',
       },
       {
         id: 3,
+        name: 'Ali',
+      },
+      {
+        id: 4,
         name: 'Leo',
+      },
+      {
+        id: 5,
+        name: 'Steve',
       },
     ],
     current: null,
@@ -56,13 +65,18 @@ const StudentState = (props) => {
   };
 
   // Update Student
-  const updateStudent = (student) => {
-    dispatch({ type: UPDATE_STUDENT, payload: student });
+  const updateStudent = (students) => {
+    dispatch({ type: UPDATE_STUDENT, payload: students });
   };
 
   // Filter Students
 
   // Clear Filter
+
+  // Shuffle Students
+  const shuffleStudents = (students) => {
+    dispatch({ type: SHUFFLE_STUDENTS, payload: students });
+  };
 
   return (
     <StudentContext.Provider
@@ -74,6 +88,7 @@ const StudentState = (props) => {
         setCurrent,
         clearCurrent,
         updateStudent,
+        shuffleStudents,
       }}
     >
       {props.children}
