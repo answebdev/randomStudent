@@ -23,13 +23,13 @@ export default (state, action) => {
           student.id === action.payload.id ? action.payload : student
         ),
       };
-    case SHUFFLE_STUDENTS:
-      return {
-        ...state,
-        student: state.students
-          .sort(() => Math.random() - Math.random())
-          .find(() => true),
-      };
+    // case SHUFFLE_STUDENTS:
+    //   return {
+    //     ...state,
+    //     student: state.students
+    //       .sort(() => Math.random() - Math.random())
+    //       .find(() => true),
+    //   };
     // case SHUFFLE_STUDENTS:
     //   const students = [...state.students];
     //   for (let idx = students.length - 1; idx > 0; idx--) {

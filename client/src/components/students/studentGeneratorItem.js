@@ -10,17 +10,23 @@ const StudentGeneratorItem = ({ student }) => {
 
   const onShuffle = (randomName) => {
     shuffleStudents();
-    randomName = students
-      .sort(() => Math.random() - Math.random())
-      .find(() => true);
+    // randomName = students
+    //   .sort(() => Math.random() - Math.random())
+    //   .find(() => true);
+    randomName = students[Math.floor(Math.random() * students.length)];
     document.getElementById('main').innerHTML = randomName.name;
     console.log('And the lucky student is ' + randomName.name);
   };
 
   return (
     <div className='generator-card bg-light'>
-      <h3 className='text-primary text-left'>And the lucky student is:</h3>
-      <p id='main'>{randomName}</p>
+      <h3 className='text-primary text-left' id='head'>
+        And the lucky student is...
+      </h3>
+      <p id='main'>
+        <i class='far fa-question-circle fa-lg'></i>
+        {randomName}
+      </p>
       <br />
       <p>
         <button className='btn btn-danger btn-sm' onClick={onShuffle}>

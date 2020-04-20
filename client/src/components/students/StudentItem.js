@@ -16,9 +16,18 @@ const StudentItem = ({ student }) => {
   return (
     <div className='card bg-light'>
       <h3 className='text-primary text-left'>{name}</h3>
+      <button
+        className='btn btn-dark btn-sm'
+        onClick={() => setCurrent(student)}
+      >
+        Edit
+      </button>
+      <button className='btn btn-danger btn-sm' onClick={onDelete}>
+        Delete
+      </button>
       <br />
       <p>
-        <button
+        {/* <button
           className='btn btn-dark btn-sm'
           onClick={() => setCurrent(student)}
         >
@@ -26,7 +35,7 @@ const StudentItem = ({ student }) => {
         </button>
         <button className='btn btn-danger btn-sm' onClick={onDelete}>
           Delete
-        </button>
+        </button> */}
       </p>
     </div>
   );
