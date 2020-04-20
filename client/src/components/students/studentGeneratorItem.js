@@ -19,20 +19,25 @@ const StudentGeneratorItem = ({ student }) => {
   };
 
   return (
-    <div className='generator-card bg-light'>
-      <h3 className='text-primary text-left' id='head'>
-        And the lucky student is...
-      </h3>
-      <p id='main'>
-        <i class='far fa-question-circle fa-lg'></i>
-        {randomName}
-      </p>
-      <br />
-      <p>
-        <button className='btn btn-danger btn-sm' onClick={onShuffle}>
-          Shuffle
-        </button>
-      </p>
+    <div className='gen'>
+      <div className='generator-card bg-light'>
+        <h3 className='text-primary text-left' id='head'>
+          And the lucky student is...
+        </h3>
+        <p id='main'>
+          <i class='far fa-question-circle fa-lg'></i>
+          {randomName}
+        </p>
+        <br />
+        <p>
+          <button
+            className='btn btn-primary error-btn btn-sm'
+            onClick={onShuffle}
+          >
+            Next Student
+          </button>
+        </p>
+      </div>
     </div>
   );
 };
