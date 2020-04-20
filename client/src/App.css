@@ -114,7 +114,8 @@ img {
   margin: 0.7rem 0;
 }
 
-.gen {
+.gen,
+.error-div {
   width: 50%;
   position: fixed;
   top: 50%;
@@ -148,6 +149,10 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+}
+
+#student-name {
+  margin-bottom: 10px;
 }
 
 /* List */

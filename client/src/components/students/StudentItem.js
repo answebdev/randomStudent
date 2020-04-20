@@ -15,7 +15,9 @@ const StudentItem = ({ student }) => {
 
   return (
     <div className='card bg-light'>
-      <h3 className='text-primary text-left'>{name}</h3>
+      <h3 className='text-primary text-left' id='student-name'>
+        {name}
+      </h3>
       <button
         className='btn btn-dark btn-sm'
         onClick={() => setCurrent(student)}
