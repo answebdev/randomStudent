@@ -110,6 +110,7 @@ img {
 .card {
   border-radius: 5px;
   padding: 1rem;
+  padding-bottom: 0;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
 }
@@ -125,6 +126,10 @@ img {
 
 .generator-card {
   border-radius: 5px;
+  padding: 1rem;
+  border: #ccc 1px dotted;
+  margin: 0.7rem 0;
+  width: 100%;
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
@@ -144,11 +149,16 @@ img {
   font-weight: 700;
 }
 
-.generator-card {
+/* .generator-card {
   width: 100%;
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+} */
+
+.student-btns {
+  float: right;
+  font-weight: 400;
 }
 
 #student-name {
