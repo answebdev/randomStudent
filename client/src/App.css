@@ -162,6 +162,7 @@ img {
 }
 
 #student-name {
+  clear: both;
   margin-bottom: 10px;
 }
 
