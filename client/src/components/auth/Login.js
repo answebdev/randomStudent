@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -17,6 +18,9 @@ const Login = () => {
 
   return (
     <div className='form-container'>
+      <Helmet>
+        <title>Random Student Generator | Login</title>
+      </Helmet>
       <h1>
         <span className='text-primary'>Account Login</span>
       </h1>

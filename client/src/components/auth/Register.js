@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
   const [user, setUser] = useState({
@@ -19,6 +20,9 @@ const Register = () => {
 
   return (
     <div className='form-container'>
+      <Helmet>
+        <title>Random Student Generator | Register</title>
+      </Helmet>
       <h1>
         <span className='text-primary'>Account Register</span>
       </h1>
