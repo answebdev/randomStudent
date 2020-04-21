@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Register from './components/auth/Register';
+import Login from './components/auth/Login';
 import Error from './components/pages/Error';
 import Generator from './components/pages/Generator';
 import StudentState from './context/student/StudentState';
@@ -23,6 +24,7 @@ const App = () => {
                 <Route exact path='/generator' component={Generator} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/register' component={Register} />
+                <Route exact path='/login' component={Login} />
                 <Route component={Error} />
               </Switch>
             </div>
