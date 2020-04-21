@@ -3,9 +3,11 @@
 /* Global Styles */
 :root {
   --primary-color: #8e4cc6;
-  --dark-color: #24292e;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
+  --dark-color: #0073b1;
+  /* --dark-color: #283e4a; */
+  --light-color: #f3f6f8;
+  --danger-color: #af9b62;
+  /* --danger-color: #dc3545; */
   --success-color: #28a745;
 }
 
@@ -20,7 +22,7 @@ body {
   letter-spacing: 0.5px;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -110,7 +112,7 @@ img {
 .card {
   border-radius: 5px;
   padding: 1rem;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
 }
@@ -126,11 +128,10 @@ img {
 
 .generator-card {
   border-radius: 5px;
-  padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
   /* box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
@@ -148,13 +149,6 @@ img {
 #main {
   font-weight: 700;
 }
-
-/* .generator-card {
-  width: 100%;
-  padding: 1rem;
-  border: #ccc 1px dotted;
-  margin: 0.7rem 0;
-} */
 
 .student-btns {
   float: right;
