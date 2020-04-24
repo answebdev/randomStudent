@@ -12,7 +12,6 @@ const Generator = () => {
       <div>
         <StudentGeneratorItem />
       </div>
-      <div>{/* <RandomStudents /> */}</div>
     </div>
   );
 };

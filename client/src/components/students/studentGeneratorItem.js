@@ -20,6 +20,9 @@ const StudentGeneratorItem = ({ student }) => {
 
   return (
     <div className='gen'>
+      {/* <h1 style={{ textAlign: 'center' }}>
+        <span className='text-primary'>Generator</span>
+      </h1> */}
       <div className='generator-card bg-light'>
         <h3 className='text-primary text-left' id='head'>
           And the lucky student is...
