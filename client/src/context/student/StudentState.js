@@ -58,6 +58,11 @@ const StudentState = (props) => {
     dispatch({ type: DELETE_STUDENT, payload: id });
   };
 
+  // Clear Students
+  const clearStudents = () => {
+    dispatch({ type: CLEAR_STUDENTS });
+  };
+
   // Set Current Student
   const setCurrent = (student) => {
     dispatch({ type: SET_CURRENT, payload: student });
@@ -95,6 +100,7 @@ const StudentState = (props) => {
         clearCurrent,
         updateStudent,
         shuffleStudents,
+        clearStudents,
       }}
     >
       {props.children}

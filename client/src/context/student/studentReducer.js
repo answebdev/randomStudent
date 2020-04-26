@@ -6,6 +6,7 @@ import {
   CLEAR_CURRENT,
   UPDATE_STUDENT,
   STUDENT_ERROR,
+  CLEAR_STUDENTS,
   // SHUFFLE_STUDENTS,
   // FILTER_STUDENTS,
   // CLEAR_FILTER,
@@ -56,6 +57,13 @@ export default (state, action) => {
           (student) => student.id !== action.payload
         ),
         loading: false,
+      };
+    case CLEAR_STUDENTS:
+      return {
+        ...state,
+        students: null,
+        error: null,
+        current: null,
       };
     case SET_CURRENT:
       return {
