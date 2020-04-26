@@ -46,7 +46,7 @@ const Login = (props) => {
   return (
     <div className='form-container'>
       <Helmet>
-        <title>Random Student Generator | Login</title>
+        <title>Lucky Student | Login</title>
       </Helmet>
       <h1>
         <span className='text-primary'>Account Login</span>
@@ -78,6 +78,11 @@ const Login = (props) => {
           className='btn btn-primary btn-block'
         />
       </form>
+      <p className='my-1 info-text'>
+        Welcome to Lucky Student. Click on <strong>Register</strong> to create
+        an account. For directions on how to use this app, click on&nbsp;
+        <strong>About</strong> in the menu tab.
+      </p>
     </div>
   );
 };

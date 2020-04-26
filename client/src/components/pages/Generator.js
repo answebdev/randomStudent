@@ -7,7 +7,7 @@ const Generator = () => {
   return (
     <div className='grid-2'>
       <Helmet>
-        <title>Random Student Generator | Generator</title>
+        <title>Lucky Student | Generator</title>
       </Helmet>
       <div>
         <StudentGeneratorItem />

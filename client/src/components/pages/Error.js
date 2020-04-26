@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <div>
       <Helmet>
-        <title>Random Student Generator | Error</title>
+        <title>Lucky Student | Error</title>
       </Helmet>
       <div className='error-div'>
         <h1 className='text-center'>404 Page Not Found</h1>

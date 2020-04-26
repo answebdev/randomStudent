@@ -39,8 +39,16 @@ ul {
   list-style: none;
 }
 
+.info-text {
+  font-size: 0.75rem;
+}
+
 img {
   width: 100%;
+}
+
+#about {
+  background-color: var(--primary-color);
 }
 
 .about-bar {

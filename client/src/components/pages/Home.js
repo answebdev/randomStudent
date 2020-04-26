@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className='grid-2'>
       <Helmet>
-        <title>Random Student Generator</title>
+        <title>Lucky Student</title>
       </Helmet>
       <div>
         <StudentForm />

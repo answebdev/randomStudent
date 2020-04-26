@@ -5,19 +5,70 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title>Random Student Generator | About</title>
+        <title>Lucky Student | About</title>
       </Helmet>
       {/* <h1 className='text-primary'>About This App</h1> */}
       <h1>
         <span className='text-primary'>About This App</span>
       </h1>
+      {/* <p className='my-1'>
+        Lucky Student is a full-stack MERN application used to randomly generate
+        student names from a class roster.
+      </p> */}
       <p className='my-1'>
-        This is a full-stack React app used to randomly generate student names
-        from a class roster.
+        Lucky Student is a tool that allows teachers to select a student at
+        random from their class roster. The are various ways for teachers to
+        elicit responses from students in the classroom, such as calling on
+        particular students by name, eliciting a response from the class as a
+        whole, etc. Lucky Student can change things up in the classroom by
+        leaving it up to chance. Project the tool on the screen for the students
+        to see. They will be left wondering if they are the next lucky student
+        to be chosen!
       </p>
-      <p className='bg-dark p'>
+      <p className='my-1'>
+        <strong>Directions: </strong> To use this app, simply click on Generator
+        in the menu tab. You need to be logged in to be able to use this
+        feature. Register to create an account and log in to add or delete
+        students to your roster. Once logged in, you may also edit the names of
+        your students after you have added them, or delete them. To use the
+        Generator feature and randomly select a student from your roster, just
+        click on the Next Student button once you navigate to the Generator
+        page.
+      </p>
+      <p className='my-1'>
+        &copy; 2020 Lucky Student | Lucky Student was created and developed
+        by&nbsp;
+        <a
+          href='https://adolfschmuck.com/'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          Adolf Schmuck
+        </a>
+        .
+      </p>
+      <p className='my-1'>
+        Also by Adolf Schmuck:&nbsp;
+        <a
+          ESL
+          Toolbox
+          href='https://esl-toolbox.com/'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          ESL Toolbox
+        </a>
+        &nbsp;(a resource hub for students and teachers of ESL).
+      </p>
+      {/* <p className='my-1'>
+        Lucky Student is a full-stack MERN application used to randomly generate
+        student names from a class roster.
+      </p> */}
+      <p className='bg-dark p' id='about'>
         <strong className='about-bar'>Version 1.0.0</strong>
       </p>
+      <br />
+      <br />
     </div>
   );
 };

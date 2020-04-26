@@ -84,8 +84,8 @@ Navbar.propTypes = {
 };
 
 Navbar.defaultProps = {
-  title: 'Random Student Generator',
-  icon: 'fas fa-users',
+  title: 'Lucky Student',
+  icon: 'fas fa-school',
 };
 
 export default Navbar;
