@@ -1,5 +1,5 @@
 import { SET_ALERT, REMOVE_ALERT } from '../types';
-import alertContext from './alertContext';
+// import alertContext from './alertContext';
 
 export default (state, action) => {
   switch (action.type) {

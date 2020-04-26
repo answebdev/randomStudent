@@ -521,3 +521,9 @@ table th {
     justify-content: center;
   }
 }
+
+@media (max-width: 900px) {
+  .hide-md {
+    display: none;
+  }
+}

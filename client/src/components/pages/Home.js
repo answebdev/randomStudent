@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Students from '../students/Students';
 import StudentForm from '../students/StudentForm';
 import AuthContext from '../../context/auth/authContext';
-import AuthState from '../../context/auth/AuthState';
+// import AuthState from '../../context/auth/AuthState';
 
 const Home = () => {
   const authContext = useContext(AuthContext);
