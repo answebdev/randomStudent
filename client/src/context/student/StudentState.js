@@ -20,6 +20,7 @@ const StudentState = (props) => {
   const initialState = {
     students: null,
     current: null,
+    filtered: null,
     error: null,
   };
 
@@ -47,15 +48,27 @@ const StudentState = (props) => {
     try {
       const res = await axios.post('/api/students', student, config);
 
-      dispatch({ type: ADD_STUDENT, payload: student });
+      dispatch({ type: ADD_STUDENT, payload: res.data });
     } catch (err) {
       dispatch({ type: STUDENT_ERROR, payload: err.response.msg });
     }
   };
 
   // Delete Student
-  const deleteStudent = (id) => {
-    dispatch({ type: DELETE_STUDENT, payload: id });
+  const deleteStudent = async (id) => {
+    try {
+      await axios.delete(`/api/students/${id}`);
+
+      dispatch({
+        type: DELETE_STUDENT,
+        payload: id,
+      });
+    } catch (err) {
+      dispatch({
+        type: STUDENT_ERROR,
+        payload: err.response.msg,
+      });
+    }
   };
 
   // Clear Students

@@ -6,10 +6,10 @@ const StudentItem = ({ student }) => {
   const studentContext = useContext(StudentContext);
   const { deleteStudent, setCurrent, clearCurrent } = studentContext;
 
-  const { id, name } = student;
+  const { _id, name } = student;
 
   const onDelete = () => {
-    deleteStudent(id);
+    deleteStudent(_id);
     clearCurrent();
   };
 

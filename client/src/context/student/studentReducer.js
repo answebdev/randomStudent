@@ -23,7 +23,7 @@ export default (state, action) => {
     case ADD_STUDENT:
       return {
         ...state,
-        students: [...state.students, action.payload],
+        students: [action.payload, ...state.students],
         loading: false,
       };
     case UPDATE_STUDENT:
@@ -54,7 +54,7 @@ export default (state, action) => {
       return {
         ...state,
         students: state.students.filter(
-          (student) => student.id !== action.payload
+          (student) => student._id !== action.payload
         ),
         loading: false,
       };
