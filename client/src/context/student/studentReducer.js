@@ -1,9 +1,11 @@
 import {
+  GET_STUDENTS,
   ADD_STUDENT,
   DELETE_STUDENT,
   SET_CURRENT,
   CLEAR_CURRENT,
   UPDATE_STUDENT,
+  STUDENT_ERROR,
   // SHUFFLE_STUDENTS,
   // FILTER_STUDENTS,
   // CLEAR_FILTER,
@@ -11,10 +13,17 @@ import {
 
 export default (state, action) => {
   switch (action.type) {
+    case GET_STUDENTS:
+      return {
+        ...state,
+        students: action.payload,
+        loading: false,
+      };
     case ADD_STUDENT:
       return {
         ...state,
         students: [...state.students, action.payload],
+        loading: false,
       };
     case UPDATE_STUDENT:
       return {
@@ -22,6 +31,7 @@ export default (state, action) => {
         students: state.students.map((student) =>
           student.id === action.payload.id ? action.payload : student
         ),
+        loading: false,
       };
     // case SHUFFLE_STUDENTS:
     //   return {
@@ -45,6 +55,7 @@ export default (state, action) => {
         students: state.students.filter(
           (student) => student.id !== action.payload
         ),
+        loading: false,
       };
     case SET_CURRENT:
       return {
@@ -55,6 +66,11 @@ export default (state, action) => {
       return {
         ...state,
         current: null,
+      };
+    case STUDENT_ERROR:
+      return {
+        ...state,
+        error: action.payload,
       };
     default:
       return state;

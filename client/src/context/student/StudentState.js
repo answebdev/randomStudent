@@ -1,52 +1,56 @@
 import React, { useReducer } from 'react';
-// import uuid from 'uuid';
-import * as uuid from 'uuid';
+import axios from 'axios';
 import StudentContext from './studentContext';
 import studentReducer from './studentReducer';
 import {
+  GET_STUDENTS,
   ADD_STUDENT,
   DELETE_STUDENT,
   SET_CURRENT,
   CLEAR_CURRENT,
   UPDATE_STUDENT,
   SHUFFLE_STUDENTS,
+  CLEAR_STUDENTS,
+  STUDENT_ERROR,
   // FILTER_STUDENTS,
   // CLEAR_FILTER,
 } from '../types';
 
 const StudentState = (props) => {
   const initialState = {
-    students: [
-      {
-        id: 1,
-        name: 'Rumi',
-      },
-      {
-        id: 2,
-        name: 'Adolf',
-      },
-      {
-        id: 3,
-        name: 'Ali',
-      },
-      {
-        id: 4,
-        name: 'Leo',
-      },
-      {
-        id: 5,
-        name: 'Steve',
-      },
-    ],
+    students: null,
     current: null,
+    error: null,
   };
 
   const [state, dispatch] = useReducer(studentReducer, initialState);
 
+  // Get Students
+  const getStudents = async () => {
+    try {
+      const res = await axios.get('/api/students');
+
+      dispatch({ type: GET_STUDENTS, payload: res.data });
+    } catch (err) {
+      dispatch({ type: STUDENT_ERROR, payload: err.response.msg });
+    }
+  };
+
   // Add Student
-  const addStudent = (student) => {
-    student.id = uuid.v4();
-    dispatch({ type: ADD_STUDENT, payload: student });
+  const addStudent = async (student) => {
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    };
+
+    try {
+      const res = await axios.post('/api/students', student, config);
+
+      dispatch({ type: ADD_STUDENT, payload: student });
+    } catch (err) {
+      dispatch({ type: STUDENT_ERROR, payload: err.response.msg });
+    }
   };
 
   // Delete Student
@@ -83,6 +87,8 @@ const StudentState = (props) => {
       value={{
         students: state.students,
         current: state.current,
+        error: state.error,
+        getStudents,
         addStudent,
         deleteStudent,
         setCurrent,
