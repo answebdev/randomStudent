@@ -6,6 +6,7 @@ import About from './components/pages/About';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Alerts from './components/layout/Alerts';
+import PrivateRoute from './components/routing/PrivateRoute';
 
 import Error from './components/pages/Error';
 import Generator from './components/pages/Generator';
@@ -30,7 +31,7 @@ const App = () => {
               <div className='container'>
                 <Alerts />
                 <Switch>
-                  <Route exact path='/' component={Home} />
+                  <PrivateRoute exact path='/' component={Home} />
                   <Route exact path='/generator' component={Generator} />
                   <Route exact path='/about' component={About} />
                   <Route exact path='/register' component={Register} />
