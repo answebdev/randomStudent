@@ -71,6 +71,33 @@ const StudentState = (props) => {
     }
   };
 
+  // Update Student
+  const updateStudent = async (student) => {
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    };
+
+    try {
+      const res = await axios.put(
+        `/api/students/${student._id}`,
+        student,
+        config
+      );
+
+      dispatch({
+        type: UPDATE_STUDENT,
+        payload: res.data,
+      });
+    } catch (err) {
+      dispatch({
+        type: STUDENT_ERROR,
+        payload: err.response.msg,
+      });
+    }
+  };
+
   // Clear Students
   const clearStudents = () => {
     dispatch({ type: CLEAR_STUDENTS });
@@ -84,11 +111,6 @@ const StudentState = (props) => {
   // Clear Current Student
   const clearCurrent = () => {
     dispatch({ type: CLEAR_CURRENT });
-  };
-
-  // Update Student
-  const updateStudent = (students) => {
-    dispatch({ type: UPDATE_STUDENT, payload: students });
   };
 
   // Filter Students

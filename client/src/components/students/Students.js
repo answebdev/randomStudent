@@ -15,11 +15,12 @@ const Students = () => {
   }, []);
 
   if (students !== null && students.length === 0 && !loading) {
-    return <h4>Please add a student</h4>;
+    return <h2 className='text-center'>Please add a student</h2>;
   }
 
   return (
     <Fragment>
+      <h2 className='text-primary'>Student Roster</h2>
       {students !== null && !loading ? (
         <TransitionGroup>
           {students.map((student) => (
