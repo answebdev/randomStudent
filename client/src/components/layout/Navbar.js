@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import AuthContext from '../../context/auth/authContext';
 import StudentContext from '../../context/student/studentContext';
+import logo from '../layout/ls-logo.png';
 
 const Navbar = ({ title, icon }) => {
   const authContext = useContext(AuthContext);
@@ -42,34 +43,17 @@ const Navbar = ({ title, icon }) => {
       <li>
         <Link to='/login'>Login</Link>
       </li>
-      {/* <li>
-        <Link to='/'>Home</Link>
-      </li> */}
     </Fragment>
   );
 
   return (
     <div className='navbar bg-primary'>
       <p className='nav-title'>
-        <i className={icon} /> {title}
+        {/* <i className={icon} /> {title} */}
+        <img id='app-logo' src={logo} alt='Lucky Student Logo' /> {title}
       </p>
       <ul>
         {isAuthenticated ? authLinks : guestLinks}
-        {/* <li>
-          <Link to='/generator'>Generator</Link>
-        </li> */}
-        {/* <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/generator'>Generator</Link>
-        </li> */}
-        {/* <li>
-          <Link to='/register'>Register</Link>
-        </li>
-        <li>
-          <Link to='/login'>Login</Link>
-        </li> */}
         <li>
           <Link to='/about'>About</Link>
         </li>
@@ -85,7 +69,7 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
   title: 'Lucky Student',
-  icon: 'fas fa-school',
+  // icon: 'fas fa-school',
 };
 
 export default Navbar;

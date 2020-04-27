@@ -3,6 +3,7 @@
 /* Global Styles */
 :root {
   --primary-color: #8e4cc6;
+  /* --primary-color: #154b5d; */
   --dark-color: #0073b1;
   /* --dark-color: #283e4a; */
   --light-color: #f3f6f8;
@@ -55,12 +56,14 @@ img {
   letter-spacing: 0.5px;
 }
 
-.error-btn {
+.error-btn,
+.gen-tbn {
   letter-spacing: 0.5px;
   border-radius: 5px;
 }
 
-.error-btn:hover {
+.error-btn:hover,
+.gen-btn:hover {
   border-radius: 5px;
   opacity: 0.8;
   color: #ffffff;
@@ -116,6 +119,11 @@ img {
   text-align: left;
 }
 
+#app-logo {
+  width: 35px;
+  margin-bottom: -10px;
+}
+
 /* Cards */
 .card {
   border-radius: 5px;
@@ -125,7 +133,12 @@ img {
   margin: 0.7rem 0;
 }
 
-.gen,
+.gen-set {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .error-div {
   width: 50%;
   position: fixed;
@@ -134,24 +147,11 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.generator-card {
-  border-radius: 5px;
-  border: #ccc 1px dotted;
-  margin: 0.7rem 0;
-  width: 100%;
-  padding: 2rem;
-  border: #ccc 1px dotted;
-  margin: 0.7rem 0;
-  /* box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); */
-  /* box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); */
-}
-
 #head {
   font-size: 26px;
 }
 #main {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 #main {
@@ -450,7 +450,7 @@ table th {
 }
 
 .nav-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
 }
