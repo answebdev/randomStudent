@@ -40,6 +40,7 @@ const About = () => {
         &copy; 2020 Lucky Student | Lucky Student was created and developed
         by&nbsp;
         <a
+          className='outside-links'
           href='https://adolfschmuck.com/'
           rel='noopener noreferrer'
           target='_blank'
@@ -51,6 +52,7 @@ const About = () => {
       <p className='my-1'>
         Also by Adolf Schmuck:&nbsp;
         <a
+          className='outside-links'
           href='https://esl-toolbox.com/'
           rel='noopener noreferrer'
           target='_blank'

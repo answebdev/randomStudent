@@ -36,6 +36,18 @@ a:hover {
   color: #666;
 }
 
+.outside-links {
+  color: #eb9424;
+}
+
+.outside-links:hover {
+  color: #8e4cc6;
+}
+
+.outside-links:active {
+  color: var(--dark-color);
+}
+
 ul {
   list-style: none;
 }
