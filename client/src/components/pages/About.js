@@ -9,26 +9,27 @@ const About = () => {
       </Helmet>
       {/* <h1 className='text-primary'>About This App</h1> */}
       <h1>
-        <span className='text-primary'>About This App</span>
+        <span className='text-primary'>About Lucky Student</span>
+        {/* <span className='text-primary'>About This App</span> */}
       </h1>
       {/* <p className='my-1'>
         Lucky Student is a full-stack MERN application used to randomly generate
         student names from a class roster.
       </p> */}
       <p className='my-1'>
-        Lucky Student is a tool that allows teachers to select a student at
-        random from their class roster. The are various ways for teachers to
-        elicit responses from students in the classroom, such as calling on
-        particular students by name, eliciting a response from the class as a
-        whole, etc. Lucky Student can change things up in the classroom by
-        leaving it up to chance. Project the tool on the screen for the students
-        to see. They will be left wondering if they are the next lucky student
-        to be chosen!
+        Lucky Student is a tool that can be used in the classroom and that
+        allows teachers to select a student at random from their class roster.
+        There are various ways for teachers to elicit responses from students in
+        the classroom, such as calling on particular students by name, eliciting
+        a response from the class as a whole, etc. Lucky Student can change
+        things up in the classroom by leaving it up to chance. Project it on the
+        screen for the students to see. They will be left wondering if they are
+        the next lucky student to be chosen!
       </p>
       <p className='my-1'>
-        <strong>Directions: </strong> To use this app, simply click on Generator
-        in the menu tab. You need to be logged in to be able to use this
-        feature. Register to create an account and log in to add or delete
+        <strong>Directions: </strong> To use Lucky Student, simply click on
+        Generator in the menu tab. You need to be logged in to be able to use
+        this feature. Register to create an account and log in to add or delete
         students to your roster. Once logged in, you may also edit the names of
         your students after you have added them, or delete them. To use the
         Generator feature and randomly select a student from your roster, just
@@ -50,8 +51,6 @@ const About = () => {
       <p className='my-1'>
         Also by Adolf Schmuck:&nbsp;
         <a
-          ESL
-          Toolbox
           href='https://esl-toolbox.com/'
           rel='noopener noreferrer'
           target='_blank'

@@ -28,7 +28,7 @@ const StudentGeneratorItem = ({ student }) => {
           And the lucky student is...
         </h3>
         <p id='main'>
-          <i class='far fa-question-circle fa-lg'></i>
+          <i className='far fa-question-circle fa-lg'></i>
           {randomName}
         </p>
         <br />
