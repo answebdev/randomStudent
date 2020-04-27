@@ -46,6 +46,7 @@ a:hover {
 
 .outside-links:active {
   color: var(--dark-color);
+  /* color: #ec048c; */
 }
 
 ul {

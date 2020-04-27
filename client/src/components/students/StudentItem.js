@@ -30,7 +30,7 @@ const StudentItem = ({ student }) => {
         </span> */}
       </h3>
       <button
-        className='btn btn-dark btn-sm'
+        className='btn btn-primary btn-sm'
         onClick={() => setCurrent(student)}
       >
         Edit
