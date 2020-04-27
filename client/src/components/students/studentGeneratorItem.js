@@ -33,7 +33,8 @@ const StudentGeneratorItem = ({ student }) => {
     >
       <h1 className='text-primary text-center'>And the lucky student is...</h1>
       <p className='text-center' id='main'>
-        <i className='far fa-question-circle fa-lg'></i>
+        <i className='fas fa-question'></i> <i className='fas fa-question'></i>{' '}
+        <i className='fas fa-question'></i>
         {randomName}
       </p>
       <br />

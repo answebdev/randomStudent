@@ -11,8 +11,10 @@ const Generator = () => {
       </Helmet>
       <h1>
         <span className='text-primary'>Generator</span>
-        {/* <span className='text-primary'>About This App</span> */}
       </h1>
+      <p className='my-1'>
+        Click the <strong>Next Student</strong> button to choose a student at random.
+      </p>
       <div>
         <StudentGeneratorItem />
       </div>
