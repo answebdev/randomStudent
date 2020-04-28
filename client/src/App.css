@@ -69,6 +69,11 @@ img {
   letter-spacing: 0.5px;
 }
 
+.pnf {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .error-btn,
 .gen-tbn {
   letter-spacing: 0.5px;
@@ -132,9 +137,25 @@ img {
   text-align: left;
 }
 
+#error-girl {
+  width: 50%;
+}
+
 #app-logo {
   width: 35px;
   margin-bottom: -10px;
+}
+
+.centered-error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#error-girl {
+  width: 35%;
+  height: auto;
 }
 
 /* Cards */
@@ -541,10 +562,34 @@ table th {
     text-align: center;
     justify-content: center;
   }
+
+  .centered-error {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #error-girl {
+    width: 50%;
+    height: auto;
+  }
 }
 
 @media (max-width: 900px) {
   .hide-md {
     display: none;
+  }
+
+  .centered-error {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #error-girl {
+    width: 75%;
+    height: auto;
   }
 }

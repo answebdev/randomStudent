@@ -13,7 +13,8 @@ const Generator = () => {
         <span className='text-primary'>Generator</span>
       </h1>
       <p className='my-1'>
-        Click the <strong>Next Student</strong> button to choose a student at random.
+        Click the <strong>Next Student</strong> button to choose a student at
+        random.
       </p>
       <div>
         <StudentGeneratorItem />
