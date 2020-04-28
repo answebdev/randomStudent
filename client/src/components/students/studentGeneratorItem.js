@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Box } from 'rebass';
+import swal from 'sweetalert';
 import PropTypes from 'prop-types';
 import StudentContext from '../../context/student/studentContext';
 
@@ -23,10 +24,17 @@ const StudentGeneratorItem = ({ student }) => {
     randomName = students[Math.floor(Math.random() * students.length)];
     // Redirect to Home page if there are no students on the roster
     if (students.length === 0) {
-      alert(
-        'You currently have no students on your roster. Please add a student to use the Generator feature.'
-      );
-      window.location = '/';
+      swal({
+        title: 'No Students',
+        text:
+          'You currently have no students on your roster. Please click Home and add students to your roster to use the Generator feature.',
+        icon: 'warning',
+        dangerMode: true,
+      });
+      // alert(
+      //   'You currently have no students on your roster. Please add a student to use the Generator feature.'
+      // );
+      // window.location = '/';
     } else {
       document.getElementById('main').innerHTML = randomName.name;
       console.log('And the lucky student is ' + randomName.name);
