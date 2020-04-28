@@ -18,6 +18,7 @@ const Generator = () => {
       </p>
       <div>
         <StudentGeneratorItem />
+        <br />
       </div>
     </div>
   );

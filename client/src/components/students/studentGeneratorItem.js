@@ -19,6 +19,14 @@ const StudentGeneratorItem = ({ student }) => {
     console.log('And the lucky student is ' + randomName.name);
   };
 
+  // Redirect to home page if Generator page is refreshed
+  window.onbeforeunload = function () {
+    window.setTimeout(function () {
+      window.location = '/';
+    }, 0);
+    window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser
+  };
+
   return (
     <Box
       style={{ border: '#ccc 1px dotted', padding: '75px', margin: '0.7rem 0' }}
