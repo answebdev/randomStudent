@@ -11,12 +11,26 @@ const StudentGeneratorItem = ({ student }) => {
 
   const onShuffle = (randomName) => {
     shuffleStudents();
+
+    // if (randomName.name === undefined) {
+    //   alert('You currently have no students on your roster. Please add a student to use the');
+    //   window.location = '/';
+    // }
+
     // randomName = students
     //   .sort(() => Math.random() - Math.random())
     //   .find(() => true);
     randomName = students[Math.floor(Math.random() * students.length)];
-    document.getElementById('main').innerHTML = randomName.name;
-    console.log('And the lucky student is ' + randomName.name);
+    // Redirect to Home page if there are no students on the roster
+    if (students.length === 0) {
+      alert(
+        'You currently have no students on your roster. Please add a student to use the Generator feature.'
+      );
+      window.location = '/';
+    } else {
+      document.getElementById('main').innerHTML = randomName.name;
+      console.log('And the lucky student is ' + randomName.name);
+    }
   };
 
   // Redirect to home page if Generator page is refreshed
