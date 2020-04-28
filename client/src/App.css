@@ -184,12 +184,11 @@ img {
 #head {
   font-size: 26px;
 }
-#main {
-  font-size: 26px;
-}
 
 #main {
   font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.5px;
 }
 
 .student-btns {
