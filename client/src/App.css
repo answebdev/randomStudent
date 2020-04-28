@@ -42,6 +42,7 @@ a:hover {
 
 .outside-links:hover {
   color: #8e4cc6;
+  text-decoration: underline;
 }
 
 .outside-links:active {
