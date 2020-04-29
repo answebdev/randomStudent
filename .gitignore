@@ -1,9 +1,6 @@
 node_modules/
 
-.env
-
 config/default.json
-config/production.json
 
 /client/build
 
