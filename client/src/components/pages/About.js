@@ -22,12 +22,12 @@ const About = () => {
       </p>
       <p className='my-1'>
         <strong>Directions: </strong> To use Lucky Student, simply click on
-        Generator in the menu tab. You need to be logged in to be able to use
-        this feature. Register to create an account and log in to add or delete
-        students to your roster. Once logged in, you may also edit the names of
-        your students after you have added them, or delete them. To use the
-        Generator feature and randomly select a student from your roster, just
-        click on the Next Student button once you navigate to the Generator
+        Generator in the navigation bar. You need to be logged in to be able to
+        use this feature. Register to create an account and log in to add or
+        delete students to your roster. Once logged in, you may also edit the
+        names of your students after you have added them, or delete them. To use
+        the Generator feature and randomly select a student from your roster,
+        just click on the Next Student button once you navigate to the Generator
         page.
       </p>
       <p className='my-1'>
