@@ -18,7 +18,7 @@ A complete backend API was built in order to interact with React, along with the
 
 # Lucky Student Live Link
 
-Please check out the live link for Contact Keeper here:
+Please check out the live link for Lucky Student here:
 
 https://aqueous-oasis-34129.herokuapp.com
 
