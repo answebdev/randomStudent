@@ -24,16 +24,16 @@ https://aqueous-oasis-34129.herokuapp.com
 
 # Screenshots
 
-![Screenshot 01](screenshots/contact-keeper-screenshot01.png "Account Login Page")
+![Screenshot 01](screenshots/lucky-student-screenshot01.png "Account Login Page")
 
-![Screenshot 02](screenshots/contact-keeper-screenshot02.png "Account Register Page")
+![Screenshot 02](screenshots/lucky-student-screenshot02.png "Account Register Page")
 
-![Screenshot 03](screenshots/contact-keeper-screenshot03.png "Students Page")
+![Screenshot 03](screenshots/lucky-student-screenshot03.png "Students Page")
 
-![Screenshot 04](screenshots/contact-keeper-screenshot04.png "Generator Page")
+![Screenshot 04](screenshots/lucky-student-screenshot04.png "Generator Page")
 
-![Screenshot 05](screenshots/contact-keeper-screenshot05.png "SweetAlert Message")
+![Screenshot 05](screenshots/lucky-student-screenshot05.png "SweetAlert Message")
 
-![Screenshot 06](screenshots/contact-keeper-screenshot06.png "Error Page")
+![Screenshot 06](screenshots/lucky-student-screenshot06.png "Error Page")
 
-![Screenshot 07](screenshots/contact-keeper-screenshot07.png "Preview of Link when Shared on Social Media")
+![Screenshot 07](screenshots/lucky-student-screenshot07.png "Preview of Link when Shared on Social Media")
