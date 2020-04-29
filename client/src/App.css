@@ -3,11 +3,8 @@
 /* Global Styles */
 :root {
   --primary-color: #8e4cc6;
-  /* --primary-color: #154b5d; */
   --dark-color: #0073b1;
-  /* --dark-color: #283e4a; */
   --light-color: #f3f6f8;
-  /* --danger-color: #af9b62; */
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -47,7 +44,6 @@ a:hover {
 
 .outside-links:active {
   color: var(--dark-color);
-  /* color: #ec048c; */
 }
 
 ul {
@@ -163,7 +159,6 @@ img {
 .card {
   border-radius: 5px;
   padding: 1rem;
-  /* padding-bottom: 0; */
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
 }
@@ -477,9 +472,7 @@ table th {
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  /* background-color: #8e4cc6; */
   border-bottom: solid 1px var(--primary-color);
-  /* opacity: 0.9; */
   margin-bottom: 1rem;
 }
 

@@ -17,17 +17,6 @@ const StudentItem = ({ student }) => {
     <div className='card bg-light'>
       <h3 className='text-primary text-left' id='student-name'>
         {name}{' '}
-        {/* <span className='student-btns'>
-          <button
-            className='btn btn-dark btn-sm'
-            onClick={() => setCurrent(student)}
-          >
-            Edit
-          </button>
-          <button className='btn btn-danger btn-sm' onClick={onDelete}>
-            Delete
-          </button>
-        </span> */}
       </h3>
       <button
         className='btn btn-primary btn-sm'
@@ -39,17 +28,7 @@ const StudentItem = ({ student }) => {
         Delete
       </button>
       <br />
-      <p>
-        {/* <button
-          className='btn btn-dark btn-sm'
-          onClick={() => setCurrent(student)}
-        >
-          Edit
-        </button>
-        <button className='btn btn-danger btn-sm' onClick={onDelete}>
-          Delete
-        </button> */}
-      </p>
+      <p></p>
     </div>
   );
 };

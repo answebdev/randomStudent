@@ -49,7 +49,6 @@ const Navbar = ({ title, icon }) => {
   return (
     <div className='navbar bg-primary'>
       <p className='nav-title'>
-        {/* <i className={icon} /> {title} */}
         <img id='app-logo' src={logo} alt='Lucky Student Logo' /> {title}
       </p>
       <ul>
@@ -69,7 +68,6 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
   title: 'Lucky Student',
-  // icon: 'fas fa-school',
 };
 
 export default Navbar;

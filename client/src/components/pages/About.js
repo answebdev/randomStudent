@@ -7,15 +7,9 @@ const About = () => {
       <Helmet>
         <title>Lucky Student | About</title>
       </Helmet>
-      {/* <h1 className='text-primary'>About This App</h1> */}
       <h1>
         <span className='text-primary'>About Lucky Student</span>
-        {/* <span className='text-primary'>About This App</span> */}
       </h1>
-      {/* <p className='my-1'>
-        Lucky Student is a full-stack MERN application used to randomly generate
-        student names from a class roster.
-      </p> */}
       <p className='my-1'>
         Lucky Student is a tool that can be used in the classroom and that
         allows teachers to select a student at random from their class roster.
@@ -61,10 +55,6 @@ const About = () => {
         </a>
         &nbsp;(a resource hub for students and teachers of ESL).
       </p>
-      {/* <p className='my-1'>
-        Lucky Student is a full-stack MERN application used to randomly generate
-        student names from a class roster.
-      </p> */}
       <p className='bg-dark p' id='about'>
         <strong className='about-bar'>Version 1.0.0</strong>
       </p>

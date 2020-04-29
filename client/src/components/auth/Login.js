@@ -81,7 +81,7 @@ const Login = (props) => {
       <p className='my-1 info-text'>
         Welcome to Lucky Student. Click on <strong>Register</strong> to create
         an account. For directions on how to use this app, click on&nbsp;
-        <strong>About</strong> in the menu tab.
+        <strong>About</strong> in the navigation bar.
       </p>
     </div>
   );

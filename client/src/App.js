@@ -7,7 +7,6 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Alerts from './components/layout/Alerts';
 import PrivateRoute from './components/routing/PrivateRoute';
-
 import Error from './components/pages/Error';
 import Generator from './components/pages/Generator';
 import StudentState from './context/student/StudentState';

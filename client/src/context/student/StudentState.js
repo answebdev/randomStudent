@@ -12,8 +12,6 @@ import {
   SHUFFLE_STUDENTS,
   CLEAR_STUDENTS,
   STUDENT_ERROR,
-  // FILTER_STUDENTS,
-  // CLEAR_FILTER,
 } from '../types';
 
 const StudentState = (props) => {
@@ -112,10 +110,6 @@ const StudentState = (props) => {
   const clearCurrent = () => {
     dispatch({ type: CLEAR_CURRENT });
   };
-
-  // Filter Students
-
-  // Clear Filter
 
   // Shuffle Students
   const shuffleStudents = (students) => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-// import RandomStudents from '../students/randomStudents';
 import StudentGeneratorItem from '../students/studentGeneratorItem';
 
 const Generator = () => {
