@@ -1,7 +1,5 @@
 node_modules/
 
-.env
-
 config/default.json
 
 /client/build
