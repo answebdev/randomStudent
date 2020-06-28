@@ -15,6 +15,8 @@ A complete backend API was built in order to interact with React, along with the
 * NPM packages: Axios, React Router, React Transition Group, React Helmet, bcryptjs, UUID, Express-Validator, Mongoose, Rebass, and SweetAlert
 * Animate.css
 * CSS
+* Font Awesome
+* Google Fonts
 
 # Lucky Student Live Link
 
