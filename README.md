@@ -40,4 +40,4 @@ https://lucky-student.com/
 
 ![Screenshot 07](screenshots/lucky-student-screenshot07.png "Preview of Link when Shared on Social Media")
 
-![Screenshot 08](screenshots/lucky-student-demo "Lucky Student Demo Video")
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
