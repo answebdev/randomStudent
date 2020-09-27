@@ -39,3 +39,5 @@ https://lucky-student.com/
 ![Screenshot 06](screenshots/lucky-student-screenshot06.png "Error Page")
 
 ![Screenshot 07](screenshots/lucky-student-screenshot07.png "Preview of Link when Shared on Social Media")
+
+[![Watch the video](screenshots/lucky-student-screenshot01.png)](https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view)
