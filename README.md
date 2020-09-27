@@ -46,4 +46,4 @@ https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view
 
 ![Screenshot 07](screenshots/lucky-student-screenshot07.png "Preview of Link when Shared on Social Media")
 
-[![Watch the video](screenshots/lucky-student-screenshot08.png "Lucky Student Demo Video")](https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view)
+[![Watch the demo video](screenshots/lucky-student-demo-video-card.png "Lucky Student Demo Video")](https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view)
