@@ -24,6 +24,12 @@ Please check out the live link for Lucky Student here:
 
 https://lucky-student.com/
 
+# Lucky Student Demo Video
+
+You can watch a demo video here:
+
+https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view
+
 # Screenshots
 
 ![Screenshot 01](screenshots/lucky-student-screenshot01.png "Account Login Page")
