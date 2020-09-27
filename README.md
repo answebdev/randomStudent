@@ -26,9 +26,7 @@ https://lucky-student.com/
 
 # Lucky Student Demo Video
 
-You can watch a demo video here:
-
-https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view
+To learn how to use Lucky Student, watch the [demo video](https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view).
 
 # Screenshots
 
