@@ -44,4 +44,4 @@ To learn how to use Lucky Student, watch the [demo video](https://drive.google.c
 
 ![Screenshot 07](screenshots/lucky-student-screenshot07.png "Preview of Link when Shared on Social Media")
 
-[![Watch the demo video](screenshots/lucky-student-demo-video-card.png "Lucky Student Demo Video")](https://drive.google.com/file/d/17FBhEFrC3Xtjt-E-yz6EzhT0A5T-NbPU/view)
+[![Watch the demo video](screenshots/lucky-student-demo-video-card.png "Lucky Student Demo Video")](https://gcccd.instructuremedia.com/embed/3849c166-e9e0-45d6-a1bf-00bcaac16f66)
