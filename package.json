@@ -31,7 +31,7 @@
     "install": "^0.13.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.13.6",
-    "npm": "^11.8.0"
+    "npm": "^11.9.0"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
